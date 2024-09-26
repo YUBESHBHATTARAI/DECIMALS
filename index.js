@@ -11,8 +11,22 @@
  }
  
 
-
-
-
-
+ //  section
+ const section=document.getElementById('section');
  
+ const side=document.getElementById('side');
+side.addEventListener("click", ()=> {
+    window.location.href = "section.html";
+});
+
+
+// upper slide
+const upper=document.getElementById('upper');
+upper.addEventListener('click', () => {
+    // Scroll the window to the top
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth' // Smooth scrolling
+    });
+});
+
