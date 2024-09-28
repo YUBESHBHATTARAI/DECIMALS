@@ -12,13 +12,16 @@
  
 
  //  section
- const section=document.getElementById('section');
  
  const side=document.getElementById('side');
-side.addEventListener("click", ()=> {
-    window.location.href = "section.html";
+ side.addEventListener("click",()=> {
+     window.location.href = "shop.html";
 });
-
+    
+    const shop=document.getElementById('shop');
+    shop.addEventListener("click",()=> {
+    window.location.href = "shop.html";
+});
 
 // upper slide
 const upper=document.getElementById('upper');
@@ -30,3 +33,12 @@ upper.addEventListener('click', () => {
     });
 });
 
+// upper slide
+const clothes=document.getElementById('clothes');
+clothes.addEventListener('click', () => {
+    // Scroll the window to the top
+    window.scrollTo({
+        top: 10,
+        behavior: 'smooth' // Smooth scrolling
+    });
+});
