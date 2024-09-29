@@ -33,12 +33,27 @@ upper.addEventListener('click', () => {
     });
 });
 
-// upper slide
+//clothes
 const clothes=document.getElementById('clothes');
 clothes.addEventListener('click', () => {
-    // Scroll the window to the top
+    // Scroll the window to the center
     window.scrollTo({
-        top: 10,
+       top: 40,
         behavior: 'smooth' // Smooth scrolling
+    });
+});
+
+
+
+
+document.getElementById("clothes").addEventListener("click", function() {
+    // Calculate the center of the page
+    const x = (document.documentElement.scrollWidth - window.innerWidth) / 2;
+    
+    // Scroll to the center
+    window.scrollTo({
+        top: "glass",
+        
+        behavior: "smooth" // For smooth scrolling
     });
 });
