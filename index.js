@@ -11,19 +11,19 @@
  }
  
 
- //  section
  
+ //js for shop button
  const side=document.getElementById('side');
  side.addEventListener("click",()=> {
      window.location.href = "shop.html";
 });
-    
+    // js for  shop button
     const shop=document.getElementById('shop');
     shop.addEventListener("click",()=> {
     window.location.href = "shop.html";
 });
 
-// upper slide
+// js for upper slide
 const upper=document.getElementById('upper');
 upper.addEventListener('click', () => {
     // Scroll the window to the top
@@ -33,27 +33,46 @@ upper.addEventListener('click', () => {
     });
 });
 
-//clothes
-const clothes=document.getElementById('clothes');
-clothes.addEventListener('click', () => {
-    // Scroll the window to the center
+//js for previous 
+const previous=document.getElementById('previous');
+previous.addEventListener("click",()=> {
+    window.location.href = "index.html";
+});
+
+//up 
+const up=document.getElementById('up');
+up.addEventListener('click', () => {
+    // Scroll the window to the top
     window.scrollTo({
-       top: 40,
+        top: 0,
         behavior: 'smooth' // Smooth scrolling
     });
 });
 
 
 
-
-document.getElementById("clothes").addEventListener("click", function() {
-    // Calculate the center of the page
-    const x = (document.documentElement.scrollWidth - window.innerWidth) / 2;
+//js for shop.html
+function scrollToServices(item){
+    document.getElementById(item).scrollIntoView({ behavior: 'smooth' });
     
-    // Scroll to the center
-    window.scrollTo({
-        top: "glass",
-        
-        behavior: "smooth" // For smooth scrolling
+};
+
+const scrollLinks = document.querySelectorAll('.scroll-link');
+scrollLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault(); // Prevent the default anchor behavior
+
+       // Get the target section
+    const targetId = link.getAttribute('href');
+    const targetSection = document.querySelector(targetId);
+
+    // Scroll to the target section
+    targetSection.scrollIntoView({
+      behavior: 'smooth', // Smooth scrolling
+      block: 'start' // Align the top of the section
     });
+    // Close the menu after clicking (optional)
+    hamburger.classList.remove('active');
+    navMenu.classList.remove('active');
+  });
 });
