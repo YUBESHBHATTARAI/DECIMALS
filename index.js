@@ -40,15 +40,13 @@ previous.addEventListener("click",()=> {
 });
 
 //up 
-const up=document.getElementById('up');
+const up = document.getElementById('up');
 up.addEventListener('click', () => {
-    // Scroll the window to the top
     window.scrollTo({
         top: 0,
         behavior: 'smooth' // Smooth scrolling
     });
 });
-
 
 
 //js for shop.html
