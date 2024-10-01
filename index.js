@@ -17,6 +17,11 @@
  side.addEventListener("click",()=> {
      window.location.href = "shop.html";
 });
+ //js for shop button
+ const side2=document.getElementById('side2');
+ side2.addEventListener("click",()=> {
+     window.location.href = "index.html";
+});
     // js for  shop button
     const shop=document.getElementById('shop');
     shop.addEventListener("click",()=> {
@@ -32,19 +37,17 @@ upper.addEventListener('click', () => {
         behavior: 'smooth' // Smooth scrolling
     });
 });
-
-//js for previous 
-const previous=document.getElementById('previous');
-previous.addEventListener("click",()=> {
+//
+const previous = document.getElementById('previous');
+previous.addEventListener("click", () => {
     window.location.href = "index.html";
 });
-
-//up 
-const up = document.getElementById('up');
+//upper
+const up = document.getElementById('upper');
 up.addEventListener('click', () => {
     window.scrollTo({
         top: 0,
-        behavior: 'smooth' // Smooth scrolling
+        behavior: 'smooth'
     });
 });
 
