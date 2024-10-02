@@ -33,7 +33,7 @@ upper.addEventListener('click', () => {
         behavior: 'smooth' // Smooth scrolling
     });
 });
-//
+// js for previous 
 const previous = document.getElementById('previous');
 previous.addEventListener("click", () => {
     window.location.href = "index.html";
