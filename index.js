@@ -17,11 +17,7 @@
  side.addEventListener("click",()=> {
      window.location.href = "shop.html";
 });
- //js for shop button
- const side2=document.getElementById('side2');
- side2.addEventListener("click",()=> {
-     window.location.href = "index.html";
-});
+ 
     // js for  shop button
     const shop=document.getElementById('shop');
     shop.addEventListener("click",()=> {
@@ -42,21 +38,6 @@ const previous = document.getElementById('previous');
 previous.addEventListener("click", () => {
     window.location.href = "index.html";
 });
-//upper
-const up = document.getElementById('upper');
-up.addEventListener('click', () => {
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-    });
-});
-
-
-//js for shop.html
-function scrollToServices(item){
-    document.getElementById(item).scrollIntoView({ behavior: 'smooth' });
-    
-};
 
 const scrollLinks = document.querySelectorAll('.scroll-link');
 scrollLinks.forEach(link => {
@@ -77,3 +58,9 @@ scrollLinks.forEach(link => {
     navMenu.classList.remove('active');
   });
 });
+
+
+ 
+
+
+

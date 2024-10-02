@@ -291,16 +291,23 @@
       window.location.href = "index.html";
   });
 
-  const up = document.getElementById('up');
-  up.addEventListener('click', () => {
-      window.scrollTo({
-          top: 0,
-          behavior: 'smooth'
-      });
-  });
+  //upper
+const up = document.getElementById('upper');
+up.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
+
+  //js for shop.html
+function scrollToServices(item){
+    document.getElementById(item).scrollIntoView({ behavior: 'smooth' });
+    
+};
 
 </script>
-<script src="index.js"></script>
+
 </body>
 
 </html>
